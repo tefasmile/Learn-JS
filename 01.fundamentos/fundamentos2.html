@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Programacion fundamentos js parte 2</title>
+	<meta name="description" content="Ejercicios de programacion con js">
+	<style type="text/css">
+	body,html{
+		font-family: sans-serif;
+		font-size: 16px;
+	}
+	</style>
+	<!--
+	Algoritmo: es una serie de pasos a seguir para realizar una tarea, estos pasos son ordenados
+	y finitos. Es como una receta.
+
+	Diagramas de flujo: Es la representación grafica de un algoritmo.
+
+	Eventos:
+	http://librosweb.es/ajax/capitulo_6/modelo_basico_de_eventos.html 
+	-->
+</head>
+<body>
+	<h1>Fundamentos de programación JavaScript parte 2</h1>
+	<p><a href="index.html">Regresar al inicio</a></p>
+	<h2>Algoritmos y Diagramas de Flujo</h2>
+	<img src="activos/simbolos-diagramas-flujo.png" alt="Símbolos de los diagramas de flujo">
+	<h2>Eventos</h2>
+	<button onclick="eventoClick();">Manejador de eventos como atributo HTML</button>
+	<button id="boton1">Manejador de eventos semántico</button>
+	<button id="boton2">Manejador de eventos múltiple</button>
+	<h2>¿Cómo determinamos si un numero es par o impar?</h2>
+	<!--
+	1Algoritmo:
+		1)Saber cual es el número a determinar si es par o impar
+		2)Dividir el número entre 2.
+		3)Evaluar el residuo:
+			4)Si el residuo es 0,el número es par.
+			5)Si el residuo es 1,el número es impar.
+
+	Eventos: http://librosweb.es/ajax/capitulo_6/modelo_basico_de_eventos.html
+	DOM    : http://es/wikipedia.org/wiki/Document_Object_Model
+			 http://librosweb.es/ajax/capitulo_4.html 
+
+	Estructuras de control: Condicionan el flujo de la programación.
+		1)Estructuras Secuenciales (se ejecutan una linea de codigo detras de la otra)
+		2)Estructuras Condicionales o de Decisión
+			operador ternario
+			if-else
+			if-else else-if else
+			switch-case
+		3)Estructuras Repetitivas
+			for
+			while
+		OPERADORES LOGICOS
+			1)AND - y - && - Todas las condiciones deben cumplirse
+			2)OR  - O - ll - Al menos una condicióń debe cumplirse
+			3)NOT -Negar-! - Lo que es true se vuelve false, y lo que es false se vuelve true
+	-->
+	<button id="numero">Dame un número</button>
+	<h2>Juguemos con la fecha</h2>
+	<button id="hola">Hola</button>
+	<button id="bisiesto">Año Bisiesto</button>
+	<!--
+	2Algoritmo: Año bisiesto
+		1)El año debe ser divisible entre 4, por ejemplo 2004,2008
+		2)Pero si el año es divisible entre 4 y 100, entonces no es bisiesto ej: 2100,2200
+		3)Pero si el año es divisible entre 100 y 400, es biciesto por ej: 2000,2400
+		¿por que?
+		http://www.disfrutalasmatematicas.com/medida/anos-bisiestos.html
+	-->
+	<h2>Temporizadores en JS</h2>
+	<button id="reloj">reloj</button>
+	<button id="detener-reloj">detener-reloj</button>
+	<button id="alarma">alarma</button>
+	<button id="detener-alarma">detener-alarma</button>
+	<div id="muestro-hora"></div>
+	<br/>
+	<img src="activos/diagrama-par-impar.jpg" alt="">
+	<script type="text/javascript" src="js/fundamentos2.js"></script>
+</body>
+</html>

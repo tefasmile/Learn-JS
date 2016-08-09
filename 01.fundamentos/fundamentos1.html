@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Programacion fundamentos js parte 1</title>
+	<meta name="description" content="Ejercicios de programacion con js">
+	<style type="text/css">
+	body,html{
+		font-family: sans-serif;
+		font-size: 16px;
+	}
+	</style>
+</head>
+<body>
+	<h1>Fundamentos de programación JavaScript parte 1</h1>
+	<p>
+		<a href="index.html">Regresar al inicio</a>
+	</p>
+	<h2>Definiendo un Perro</h2>
+	<script type="text/javascript">
+		//clase perro
+		function Perro(n,r,e,s,a,f)
+		{
+			//this dentro de una funcion es el objeto que se define en la funcion
+			var objeto = this;
+			var imagen = document.createElement('img');//variable global
+
+			objeto.nombre = n;
+			objeto.raza   = r;
+			objeto.edad   = e;
+			//objeto.sexo   = s;
+			objeto.adiestrado = a;
+			objeto.foto   = f;
+			//objeto.comida = c;
+
+			//Asignación (1 igual =)
+			//Comparación (2 iguales == compara que los valores sean iguales)
+			//Idéntico (3 iguales === compara que los valores y su tipo de dato sean identicos)
+
+			//operador ternario
+			//test ? expression1 : expression2
+			//variable = (condicion)?verdadero:falso
+			//objeto.sexo = (s == true)?"Macho":"Hembra";
+			//objeto.sexo = (s === true)?"Macho":"Hembra";
+			//objeto.sexo = (!s)?"Macho":"Hembra";//fuera falso
+			objeto.sexo = (s)?"Macho":"Hembra";//fuera verdadero  
+
+			//Saber Que tipo de dato es por naturaleza
+			//console.log(typeof s, typeof n, typeof e);
+			
+			//metodo 1
+			objeto.aparecer = function()
+			{
+				//alert('El objeto Aparece..')
+				//imagen = document.createElement('img'); ---> variable global sin var
+				imagen.src = objeto.foto;
+				imagen.alt = objeto.nombre;
+				imagen.title = objeto.nombre;
+
+				document.body.appendChild(imagen);
+			}
+			
+			//metodo 2
+			objeto.ladrar = function()
+			{
+				alert('Guaa!! Guaaauu!!');
+				var audio = document.createElement('audio');
+				audio.src = 'activos/guau.mp3';
+				//audio.controls = true;
+				//document.body.appendChild(audio);
+				return audio.play();
+			}
+			
+			//metodo 3												
+			objeto.comer = function(c)
+			{
+				objeto.comida = c;
+				var alerta = alert(objeto.nombre+ ' comió '+objeto.comida);
+				return alerta;
+			}
+			
+			//metodo 4
+			objeto.mover = function()
+			{
+				//alert('Objeto movido')
+				imagen.style.position = 'relative';
+				imagen.style.left = '10em';
+				imagen.style.borderRadius = '100%'; 
+			}
+		}
+
+		function iniciar(){
+			var doki = new Perro('Doki','freshpuder', 2, true, true,'activos/kenai.jpg');
+			document.write(doki + '<br />' + window + '<br />' + document + '<br />' + navigator);
+			console.log(doki);
+			document.write("<p>" + doki.nombre + "</p>");
+			document.write("<p>" + doki.sexo + "</p>");
+
+			doki.aparecer();
+			doki.ladrar();
+			doki.comer('empanadas');
+			doki.mover();
+		}
+		iniciar();
+	</script>
+</body>
+</html>

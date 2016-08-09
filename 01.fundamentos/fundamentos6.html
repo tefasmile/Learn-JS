@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Programacion fundamentos js parte 6</title>
+	<meta name="description" content="Ejercicios de programacion con js">
+	<link rel="stylesheet" href="activos/paises.css">
+	<style type="text/css">
+	body,html{
+		font-family: sans-serif;
+		font-size: 16px;
+	}
+	</style>
+</head>
+<body>
+	<h1>Fundamentos de programación JavaScript parte 6</h1>
+	<p><a href="index.html">Regresar al inicio</a></p>
+	<h2>Números</h2>
+	<button id="calificacion">Calificacion</button>
+	<button id="adivina">Adivina el número</button>
+	
+	<h2>Cadenas de Texto</h2>
+	<button id="escribe">Escribe algo</button>
+
+	<h2>Formularios</h2>
+	<form id="rfc" action="">
+		<fieldset>
+			<legend>Ingresa tus datos:</legend>
+			<div>
+				<label for="nombre">Nombre(s):</label>
+				<input type="text" id="nombre" placeholder="nombre(s)" />
+			</div>
+			<div>
+				<label for="apaterno">Apellido paterno:</label>
+				<input type="text" id="apaterno" placeholder="apellido paterno" />
+			</div>
+			<div>
+				<label for="amaterno">Apellido Materno:</label>
+				<input type="text" id="amaterno" placeholder="dd-mm-aaaa" />
+			</div>
+			<div>
+				<label for="nacimiento">Fecha de Nacimiento:</label>
+				<input type="text" id="nacimiento" placeholder="dd-mm-aaaa" />
+			</div>
+			<div>
+				<label for="contraclave">Contraclave:</label>
+				<input type="text" id="contraclave" placeholder="Deben ser 3 caractéres" />
+			</div>
+			<div>
+				<input type="submit" id="enviar" value="Generar RFC" />
+			</div>
+			<div id="respuesta"></div>
+		</fieldset>
+	</form>
+	<script src="js/fundamentos6.js"></script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+{
+ 	"paises": 
+ 	[
+ 		{
+ 			"nombre":"México", 
+ 			"ubicacion":"u-mx.png", 
+ 			"bandera":"b-mx.png", 
+ 			"escudo":"e-mx.png", 
+ 			"oficial":"Estados Unidos Mexicanos",
+ 			"gobierno":"Republica Federal Presidencial",
+ 			"capital":"Ciudad de Mexico (DF)",
+ 			"habitantes":119426000,
+ 			"territorio":1964375
+ 		},
+ 		{
+ 			"nombre":"Colombia", 
+ 			"ubicacion":"u-co.png", 
+ 			"bandera":"b-co.png", 
+ 			"escudo":"e-co.png", 
+ 			"oficial":"Republica de Colombia",
+ 			"gobierno":"Republica Federal Presidencialistas",
+ 			"capital":"Bogota D.C",
+ 			"habitantes":47662951,
+ 			"territorio":1141748
+ 		},
+ 		{
+ 			"nombre":"Peru", 
+ 			"ubicacion":"u-pe.png", 
+ 			"bandera":"b-pe.png", 
+ 			"escudo":"e-pe.png", 
+ 			"oficial":"Republica del Perú",
+ 			"gobierno":"Republica Federal Presidencialistas",
+ 			"capital":"Lima",
+ 			"habitantes":30814175,
+ 			"territorio":1285216
+ 		},
+ 		{
+ 			"nombre":"España", 
+ 			"ubicacion":"u-es.png", 
+ 			"bandera":"b-es.png", 
+ 			"escudo":"e-es.png", 
+ 			"oficial":"Reino de España",
+ 			"gobierno":"Monarquíá Parlamentaria",
+ 			"capital":"Madrid",
+ 			"habitantes":47129783,
+ 			"territorio":504645
+ 		},
+ 		{
+ 			"nombre":"Argentina", 
+ 			"ubicacion":"u-ar.png", 
+ 			"bandera":"b-ar.png", 
+ 			"escudo":"e-ar.png", 
+ 			"oficial":"Republica Argentina",
+ 			"gobierno":"Republica federal Democratica",
+ 			"capital":"Buenos Aires",
+ 			"habitantes":42192500,
+ 			"territorio":2780400
+ 		}
+ 	]
+};
+
+
+
+
+
+
