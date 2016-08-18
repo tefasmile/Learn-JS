@@ -125,7 +125,7 @@ function validarDatos(evento){
 	}
 	else if(queCaja.id == "homoclave")
 	{
-		//lo que el usuario ingrese en el valor de caja no coincide con la fecha
+		//lo que el usuario ingrese en el valor de caja no coincide con la homoclave
 		if(!expRegClave.exec(queCaja.value))
 		{
 			alert("La homoclave deben ser 3 caracteres" + queCaja.placeholder);
